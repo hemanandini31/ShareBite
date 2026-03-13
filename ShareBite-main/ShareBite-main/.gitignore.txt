@@ -1,0 +1,49 @@
+# ----------------------------------------
+# Maven/Spring Boot Specific Ignores (Backend)
+# ----------------------------------------
+# Compiled classes and built artifacts
+/backend/target/
+
+# Logs and temporary files
+/backend/*.log
+/backend/logs/
+
+# IDE files (IntelliJ, Eclipse, VS Code)
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+
+# Compiled packages
+*.jar
+*.war
+*.zip
+
+# Maven Wrapper executable files (can be rebuilt)
+/backend/mvnw
+/backend/mvnw.cmd
+
+# ----------------------------------------
+# Node/React Specific Ignores (Frontend)
+# ----------------------------------------
+# Node modules folder (massive and platform-dependent)
+/frontend/node_modules
+
+# Build output folder for React production
+/frontend/build
+/frontend/dist
+/frontend/out
+
+# NPM debug log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------------------------
+# Security & Configuration (CRITICAL)
+# ----------------------------------------
+# VERY IMPORTANT: NEVER COMMIT CREDENTIALS!
+# This ignores the file containing your database passwords, JWT secrets, etc.
+/backend/src/main/resources/application.properties
+/backend/src/main/resources/application.yml

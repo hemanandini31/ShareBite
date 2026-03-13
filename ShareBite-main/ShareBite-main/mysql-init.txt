@@ -1,0 +1,2 @@
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'jeeva123';
+CREATE DATABASE IF NOT EXISTS sharebite_db;
